@@ -56,7 +56,15 @@
 
   <div class="response-area">
     <p>
+    <% if (locals.content) { %>
       <%=content%>
+    <% } else { %>
+      
+      <%= error %>
+
+      <% } %>
+     
+      
     </p>
   </div>
 </body>
